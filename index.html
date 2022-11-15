@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemy Solutions - Validación de CURP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header id="encabezado">
+    <h1>Reemy Solutions - Validación de CURP</h1>
+    </header>
+
+    <!-- Instrucciones -->
+    <div id="instrucciones">
+        <p>INSTRUCCIONES:<span> Introduzca su CURP completa y presione el botón de validar para conocer si su CURP es válida o no.</span></p>
+        <ul>
+            <h2>Nota:</h2>
+            <li>Solo están permitidas las letras en Mayúsculas.</li>
+            <li>No se permite ingresar caracteres especiales (*, +, !, -).</li>
+            <li>La letra "Ñ" no está permitida.</li>
+            <li>La longitud de la cadena ingresada debe de ser de 18 caracteres.</li>
+        </ul>
+    </div>
+
+    <!-- Validacion -->
+    <section id="validacion">
+        <div id="contenedor-validacion">
+            <label>CURP:</label>
+            <input type="text" id="curp_input" style="width:100%;" placeholder="Ingrese su CURP" onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode >= 65 && event.charCode <= 90">
+        </div>
+
+        <!-- Botones -->
+        <button id="btnValidar" onclick="validarInput()">Validar</button>
+        <button id="btnLimpiar" onclick="limpiar()">Limpiar</button>
+    </section>
+
+    <!-- Mensaje de resultado -->
+    <p id="resultado"></p>
+    
+    <!-- Pie de página -->
+    <footer id="pie">
+        <p>Todos los derechos reservados. Reemy Solutions</p>
+    </footer>
+
+</body>
+</html>

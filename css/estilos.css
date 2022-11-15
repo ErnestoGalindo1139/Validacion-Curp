@@ -1,0 +1,157 @@
+/*
+Título: Validacion de CURP
+Descripcion: Pagina web para conocer si una curp es valida o no
+Fecha: 07 de Noviembre del 2022
+Versión: 1.2
+Autores: REEMY Solutions
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krub', sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-top: .6em;
+}
+
+/* Encabezado */
+#encabezado {
+    text-align: center;
+    background-color: teal;
+    padding: 2em;
+    color: white;
+}
+
+/* Texto del resultado de validacion */
+#resultado {
+    background-color: rgb(226, 187, 139);
+    border: 3px rgb(140, 104, 61) solid;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 2em auto 10em auto;
+    width: 54em;
+    padding: 2em 0 2em .8em;
+    height: 6em;
+    box-shadow: 0px 0px 8px 0px rgba(148,148,148,1);
+}
+
+/* Instrucciones y Nota */
+#instrucciones {
+    margin: 4em 23em 0 23em;
+    text-align: justify;
+}
+
+#instrucciones p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#instrucciones span {
+    font-weight: 400;
+    font-size: 1em;
+    margin-left: .3em;
+}
+
+#instrucciones ul {
+    list-style: decimal;
+}
+
+#instrucciones li {
+    font-size: 1.1em;
+    margin-left: 1.1em;
+    margin-top: .2em;
+}
+
+#validacion {
+    margin: 6em 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de input y label de CURP */
+#contenedor-validacion {
+    width: min(35em, 100%);
+    background-color: steelblue;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: .5em;
+    box-shadow: 0px 0px 22px 2px rgba(148,148,148,1);
+    height: 8.5em;
+}
+
+#validacion label {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+#validacion input {
+    font-size: 1.2em;
+    border: none;
+    border-radius: .2em;
+    padding-left: .3em;
+    margin-top: .3em;
+    height: 2em;
+}
+
+#curp_input {
+    width: 100%;
+}
+
+/* Botones de validar y limpiar */
+#btnValidar {
+    background-color: rgb(197, 110, 39);
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    border-radius: .3em;
+    color: white;
+    margin-left: 1em;
+    height: 4em;
+    width: 8em;
+    box-shadow: 0px 0px 8px 0px rgba(148,148,148,1);
+}
+
+#btnValidar:hover {
+    color: black;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+#btnLimpiar {
+    background-color: rgb(197, 110, 39);
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    border-radius: .3em;
+    color: white;
+    margin-left: .5em;
+    height: 4em;
+    width: 8em;
+    box-shadow: 0px 0px 8px 0px rgba(148,148,148,1);
+}
+
+#btnLimpiar:hover {
+    color: black;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+/* Pie de pagina */
+#pie {
+    background-color: teal;
+    padding: 1.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
